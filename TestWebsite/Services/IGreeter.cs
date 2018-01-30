@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace TestWebsite
+namespace TestWebsite.Services
 {
     public interface IGreeter
     {
