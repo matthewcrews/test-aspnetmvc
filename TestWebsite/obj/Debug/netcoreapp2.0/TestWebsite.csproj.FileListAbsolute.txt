@@ -1,0 +1,11 @@
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\bin\Debug\netcoreapp2.0\TestWebsite.deps.json
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\bin\Debug\netcoreapp2.0\TestWebsite.runtimeconfig.json
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\bin\Debug\netcoreapp2.0\TestWebsite.runtimeconfig.dev.json
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\bin\Debug\netcoreapp2.0\TestWebsite.dll
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\bin\Debug\netcoreapp2.0\TestWebsite.pdb
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.AssemblyInfoInputs.cache
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.AssemblyInfo.cs
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.dll
+C:\Users\Matthew\Documents\GitHub\test-aspnetmvc\TestWebsite\obj\Debug\netcoreapp2.0\TestWebsite.pdb
