@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +29,18 @@ namespace TestWebsite
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            })
+            .AddOpenIdConnect(options => 
+            {
+                _configuration.Bind("AzureAd", options);
+            })
+            .AddCookie();
+
+
             services.AddSingleton<IGreeter, Greeter>();
             services.AddDbContext<TestWebsiteDbContext>(
                 options => options.UseSqlServer(_configuration.GetConnectionString("TestWebsite")));
@@ -43,7 +58,12 @@ namespace TestWebsite
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseRewriter(new RewriteOptions()
+                .AddRedirectToHttpsPermanent());
+
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseMvc(ConfigureRoutes);
 
