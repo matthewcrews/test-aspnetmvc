@@ -8,7 +8,7 @@ namespace TestWebsite.ViewModels
 {
     public class HomeIndexViewModel
     {
-        public IEnumerable<Restaurant> Restaurant { get; set; }
+        public IEnumerable<Restaurant> Restaurants { get; set; }
         public string CurrentMessage { get; set; }
     }
 }
