@@ -1,0 +1,31 @@
+{
+  "EventType": "TestWebsiteDbContext",
+  "Environment": {
+    "UserName": "Matthew",
+    "MachineName": "WALLHOOD",
+    "Culture": "en-US"
+  },
+  "StartDate": "2018-02-01T15:01:29.0881517-08:00",
+  "EndDate": "2018-02-01T15:01:29.1510642-08:00",
+  "Duration": 63,
+  "EntityFrameworkEvent": {
+    "Database": "TestWebsite",
+    "Entries": [
+      {
+        "Table": "Restaurants",
+        "Action": "Insert",
+        "PrimaryKey": {
+          "Id": 5
+        },
+        "ColumnValues": {
+          "Id": 5,
+          "Cuisine": 1,
+          "Name": "Charlie's"
+        },
+        "Valid": true
+      }
+    ],
+    "Result": 1,
+    "Success": true
+  }
+}

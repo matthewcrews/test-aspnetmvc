@@ -1,0 +1,43 @@
+{
+  "EventType": "TestWebsiteDbContext",
+  "Environment": {
+    "UserName": "Matthew",
+    "MachineName": "WALLHOOD",
+    "Culture": "en-US"
+  },
+  "StartDate": "2018-02-01T15:01:44.6798469-08:00",
+  "EndDate": "2018-02-01T15:01:44.6848914-08:00",
+  "Duration": 5,
+  "EntityFrameworkEvent": {
+    "Database": "TestWebsite",
+    "Entries": [
+      {
+        "Table": "Restaurants",
+        "Action": "Update",
+        "PrimaryKey": {
+          "Id": 3
+        },
+        "Changes": [
+          {
+            "ColumnName": "Cuisine",
+            "OriginalValue": 1,
+            "NewValue": 1
+          },
+          {
+            "ColumnName": "Name",
+            "OriginalValue": "La Poisson",
+            "NewValue": "La Poisson"
+          }
+        ],
+        "ColumnValues": {
+          "Id": 3,
+          "Cuisine": 1,
+          "Name": "La Poisson"
+        },
+        "Valid": true
+      }
+    ],
+    "Result": 1,
+    "Success": true
+  }
+}
